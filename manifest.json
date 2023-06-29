@@ -1,16 +1,18 @@
 {
-  "id": "dev.replugged.PluginTemplate",
-  "name": "Plugin Template",
-  "description": "A plugin template",
+  "id": "dev.tharki.CamKeybind",
+  "name": "CamKeybind",
+  "description": "Adds a keybind to toggle camera while in vc.",
+  "image": "https://tharki-god.github.io/files-random-host/bdpluginsassets/camKeybind.png",
+  "source": "https://github.com/Tharki-God/CamKeybind",
   "author": {
-    "name": "replugged",
-    "discordID": "1000992611840049192",
-    "github": "replugged-org"
+    "name": "Ahlawat",
+    "discordID": "1025214794766221384",
+    "github": "Tharki-God"
   },
   "version": "1.0.0",
   "updater": {
     "type": "github",
-    "id": "replugged-org/plugin-template"
+    "id": "Tharki-God/CamKeybind"
   },
   "license": "MIT",
   "type": "replugged-plugin",
