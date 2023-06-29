@@ -31,5 +31,8 @@ export const canUseCam = (): boolean => {
   const currentChannelId = RTCConnectionStore.getChannelId() as string;
   const channel = UltimateChannelStore.getChannel(currentChannelId);
   if (!channel) return false;
-  return PermissionStore.can(DiscordConstants.Permissions.STREAM, channel) as boolean;
+  return (
+    (channel.isPrivate() as boolean) ||
+    (PermissionStore.can(DiscordConstants.Permissions.STREAM, channel) as boolean)
+  );
 };
