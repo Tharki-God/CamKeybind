@@ -31,5 +31,5 @@ export const canUseCam = (): boolean => {
   const currentChannelId = RTCConnectionStore.getChannelId() as string;
   const channel = UltimateChannelStore.getChannel(currentChannelId);
   if (!channel) return false;
-  return PermissionStore.can(DiscordConstants.Permissions.MOVE_MEMBERS, channel) as boolean;
+  return PermissionStore.can(DiscordConstants.Permissions.STREAM, channel) as boolean;
 };
