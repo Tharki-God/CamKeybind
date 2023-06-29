@@ -14,27 +14,27 @@ export const registerSettings = (): void => {
 export const Settings = (): Types.ReactElement => {
   return (
     <div>
-        <KeybindRecorderItem
-          {...{
-            title: "Toggle keybind:",
-            note: "Keybind to toggle camera in vc.",
-            ...util.useSetting(SettingValues, "keybind", defaultSettings.keybind),
-          }}
-        />
-        <SwitchItem
-          {...{
-            note: "Show toasts on using keybind.",
-            ...util.useSetting(SettingValues, "showToast", defaultSettings.showToast),
-          }}>
-          Show toasts
-        </SwitchItem>
-        <SwitchItem
-          {...{
-            note: "Play a sound upon using the keybind or clicking the button in the status picker or user panel.",
-            ...util.useSetting(SettingValues, "playAudio", defaultSettings.playAudio),
-          }}>
-          Play audio
-        </SwitchItem>
+      <KeybindRecorderItem
+        {...{
+          title: "Toggle keybind:",
+          note: "Keybind to toggle camera in vc.",
+          ...util.useSetting(SettingValues, "keybind", defaultSettings.keybind),
+        }}
+      />
+      <SwitchItem
+        {...{
+          note: "Show toasts on using keybind.",
+          ...util.useSetting(SettingValues, "showToast", defaultSettings.showToast),
+        }}>
+        Show toasts
+      </SwitchItem>
+      <SwitchItem
+        {...{
+          note: "Play a sound upon using the keybind or clicking the button in the status picker or user panel.",
+          ...util.useSetting(SettingValues, "playAudio", defaultSettings.playAudio),
+        }}>
+        Play audio
+      </SwitchItem>
     </div>
   );
 };
