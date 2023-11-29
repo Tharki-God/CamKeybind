@@ -206,8 +206,8 @@ export interface KeybindRecorderItemProps {
   note?: string;
   size?: string;
   className?: string;
-  value?: unknown;
-  onChange?: (value: unknown) => void;
+  value?: number[][];
+  onChange?: (value: number[][]) => void;
   disabled?: boolean;
   clearable?: boolean;
 }
