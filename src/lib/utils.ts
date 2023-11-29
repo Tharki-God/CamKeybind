@@ -12,4 +12,3 @@ export const canUseCam = (): boolean => {
 };
 
 export default { canUseCam };
- 

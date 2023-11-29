@@ -1,5 +1,5 @@
 import { webpack } from "replugged";
-import  Types from "../types";
+import Types from "../types";
 export const WindowInfoStore = webpack.getByProps<Types.WindowInfoStore>(
   "isFocused",
   "isElementFullScreen",
