@@ -4,13 +4,13 @@ Adds a keybind to toggle camera while in vc.
 
 Sponsored Request Plugin by [Lamaan](https://discordapp.com/users/330433865296642051).
 
-Direct Download Link: [dev.tharki.CamKeybind.asar](https://github.com/Tharki-God/CamKeybind/releases/latest/download/dev.tharki.CamKeybind.asar)
+Direct Download Link: [dev.tharki.CamKeybind.asar](https://github.com/TharkiDev/CamKeybind/releases/latest/download/dev.tharki.CamKeybind.asar)
 
 Install Link:
 
-[![Install in Replugged](https://img.shields.io/badge/-Install%20in%20Replugged-blue?style=for-the-badge&logo=none)](https://replugged.dev/install?identifier=Tharki-God/CamKeybind&source=github)
+[![Install in Replugged](https://img.shields.io/badge/-Install%20in%20Replugged-blue?style=for-the-badge&logo=none)](https://replugged.dev/install?identifier=TharkiDev/CamKeybind&source=github)
 
-![camKeybindSettings](https://tharki-god.github.io/files-random-host/bdpluginsassets/camKeybind.png)
+![camKeybindSettings](https://i.imgur.com/cQ6z7Il.png)
 
 > ## Disclaimer
 >

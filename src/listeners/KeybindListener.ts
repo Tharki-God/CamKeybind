@@ -1,4 +1,5 @@
-import { CurrentlyPressed, SettingValues, Toasts } from "../index";
+import { toast as Toasts } from "replugged/common";
+import { CurrentlyPressed, SettingValues } from "../index";
 import { Sounds, defaultSettings } from "../lib/consts";
 import {
   KeybindUtils,
@@ -9,19 +10,19 @@ import {
 import * as Utils from "../lib/utils";
 import * as Types from "../types";
 export const keybindListener = (e: Types.KeybindEvent): void => {
-  const keybindEvents = KeybindUtils.toEvent(
+  const keybindEvents = KeybindUtils.toBrowserEvents(
     SettingValues.get("keybind", defaultSettings.keybind),
   ) as Types.KeybindEvents;
   if (
     e.type === "keyup" &&
+    Utils.canUseCam() &&
     keybindEvents.length &&
     keybindEvents.every(
       (ev) =>
         Object.keys(ev)
           .filter((k) => k !== "keyCode")
           .every((k) => ev[k] === e[k]) && CurrentlyPressed.get(ev.keyCode),
-    ) &&
-    Utils.canUseCam()
+    )
   ) {
     const enabled = MediaEngineStore.isVideoEnabled();
     if (SettingValues.get("showToast", defaultSettings.showToast))
@@ -29,7 +30,6 @@ export const keybindListener = (e: Types.KeybindEvent): void => {
     if (SettingValues.get("playAudio", defaultSettings.playAudio))
       SoundUtils.playSound(enabled ? Sounds.Disable : Sounds.Enable, 0.5);
     MediaEngineActions.setVideoEnabled(!enabled);
-    Utils.forceUpdate(document.querySelector("[class*=baseLayer-]"));
   }
   CurrentlyPressed.set(e.keyCode, e.type === "keydown");
 };

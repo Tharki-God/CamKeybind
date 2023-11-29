@@ -1,6 +1,5 @@
 import { types as DefaultTypes } from "replugged";
 export { types as DefaultTypes } from "replugged";
-export type { ReactElement, ComponentClass } from "react";
 export interface GenericModule extends Record<string, DefaultTypes.AnyFunction> {}
 
 export interface WindowInfoStore {
@@ -174,11 +173,11 @@ export interface RTCConnectionStore {
 }
 export interface KeybindUtils {
   toCombo: DefaultTypes.AnyFunction;
-  toEvent: DefaultTypes.AnyFunction;
+  toBrowserEvents: DefaultTypes.AnyFunction;
 }
 export interface SoundUtils {
   createSound: DefaultTypes.AnyFunction;
-  createSoundpackSound: DefaultTypes.AnyFunction;
+  createSoundForPack: DefaultTypes.AnyFunction;
   playSound: DefaultTypes.AnyFunction;
 }
 export interface KeybindEvent {
@@ -218,3 +217,5 @@ export interface Settings {
   showToast: boolean;
   keybind: unknown[];
 }
+
+export * as default from "./types";

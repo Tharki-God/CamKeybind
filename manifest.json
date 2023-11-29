@@ -2,17 +2,17 @@
   "id": "dev.tharki.CamKeybind",
   "name": "CamKeybind",
   "description": "Adds a keybind to toggle camera while in vc.",
-  "image": "https://tharki-god.github.io/files-random-host/bdpluginsassets/camKeybind.png",
-  "source": "https://github.com/Tharki-God/CamKeybind",
+  "image": "https://i.imgur.com/cQ6z7Il.png",
+  "source": "https://github.com/TharkiDev/CamKeybind",
   "author": {
     "name": "Ahlawat",
     "discordID": "1025214794766221384",
-    "github": "Tharki-God"
+    "github": "TharkiDev"
   },
   "version": "1.0.2",
   "updater": {
     "type": "github",
-    "id": "Tharki-God/CamKeybind"
+    "id": "TharkiDev/CamKeybind"
   },
   "license": "MIT",
   "type": "replugged-plugin",
